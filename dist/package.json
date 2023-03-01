@@ -1,0 +1,29 @@
+{
+  "name": "@absoluteboi/absolute_utils",
+  "version": "0.0.1",
+  "description": "a library of helpful utilities",
+  "main": "lib/es5/index.js",
+  "module": "lib/es6/index.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:absolute-boi/absolute_utils.git"
+  },
+  "files": [
+    "lib",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "javascript",
+    "utils"
+  ],
+  "author": "absoluteboi",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/absolute-boi/absolute_utils/issues"
+  },
+  "homepage": "https://github.com/absolute-boi/absolute_utils"
+} 
