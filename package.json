@@ -1,8 +1,8 @@
 {
-  "name": "absolute_utils",
+  "name": "@absolute-boi/absolute_utils",
   "version": "0.1.0",
   "repository": "git@github.com:absolute-boi/absolute_utils.git",
-  "author": "absoluteboi <chairman@absoluteboi.com>",
+  "author": "absolute-boi <chairman@absoluteboi.com>",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "compile": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
