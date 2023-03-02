@@ -1,6 +1,6 @@
 {
   "name": "@absoluteboi/absolute_utils",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a library of helpful utilities",
   "main": "lib/es5/index.js",
   "module": "lib/es6/index.js",
