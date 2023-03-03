@@ -1,6 +1,6 @@
 {
   "name": "@absoluteboi/absolute-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a library of helpful utilities",
   "main": "lib/es5/index.js",
   "module": "lib/es6/index.js",
@@ -26,4 +26,4 @@
     "url": "https://github.com/absolute-boi/absolute_utils/issues"
   },
   "homepage": "https://github.com/absolute-boi/absolute_utils"
-} 
+}
