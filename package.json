@@ -5,13 +5,16 @@
   "author": "absoluteboi <chairman@absoluteboi.com>",
   "license": "GPL-3.0-or-later",
   "scripts": {
-    "compile": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
+    "compile": "rm -rf dist/lib && ttsc && ttsc --build tsconfig.es5.json"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",
+    "@types/node": "*",
     "jest": "^29.4.3",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
+    "ttypescript": "^1.5.15",
+    "typescript-transform-paths": "^3.4.6",
     "typescript": "^4.9.5"
   }
 }

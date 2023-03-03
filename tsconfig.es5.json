@@ -14,7 +14,10 @@
       "@lib/*": ["./src/*"],
       "@spec": ["./spec"],
       "@spec/*": ["./spec/*"]
-    }
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" }
+    ]
   },
   "include": ["src/**/*", "spec/**/*"]
 }
