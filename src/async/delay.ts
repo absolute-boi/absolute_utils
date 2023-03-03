@@ -1,4 +1,4 @@
-import { withinMaxSafeInteger } from "../number/withinMaxSafeInteger";
+import { withinMaxSafeInteger } from "@lib/number/withinMaxSafeInteger";
 
 type unitOfTime = "min" | "s" | "ms";
 

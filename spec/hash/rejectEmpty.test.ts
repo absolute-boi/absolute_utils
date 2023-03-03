@@ -1,4 +1,4 @@
-import { rejectEmpty } from "../../src/hash/rejectEmpty";
+import { rejectEmpty } from "@lib/hash/rejectEmpty";
 
 describe("rejectEmpty = (Record<string | number | symbol, T>) => { [key: string]: T }", () => {
   const objects = { foo: 1, bar: null, baz: 3 };
