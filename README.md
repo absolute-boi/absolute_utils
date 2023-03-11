@@ -30,10 +30,10 @@ Simply install and import:
 import { haveEqualNumericValues } from "@absoluteboi/absolute-utils"
 
 haveEqualNumericValues([8,6,7,5,3,0,9], [0,6,5,7,3,9,8]);
- => true
+// true
 
 haveEqualNumericValues([1,2,3], [1,2,4])
- => false
+// false
 ```
 
 **numericSort**
@@ -43,10 +43,10 @@ import { numericSort } from "@absoluteboi/absolute-utils"
 let numbers = [5,8,1,3,7,6];
 
 numericSort(numbers)
- => [1,3,5,6,7,8]
+// [1,3,5,6,7,8]
 
 numericSort(numbers, { reverse: true })
- => [8,7,6,5,3,1]
+// [8,7,6,5,3,1]
 ```
 
 **pluck**
@@ -59,10 +59,10 @@ let items = [
 ];
 
 pluck(items, "a")
- => ["foo", "baz"]
+// ["foo", "baz"]
 
 pluck(items, ["a", "b"])
- => [["foo", "bar"], ["baz", "qux"]]
+// [["foo", "bar"], ["baz", "qux"]]
 ```
 
 **sliceEach**
@@ -75,10 +75,10 @@ let items = [
 ];
 
 sliceEach(items, "a")
- => [{ a: "foo" }, { a: "baz" }]
+// [{ a: "foo" }, { a: "baz" }]
 
 sliceEach(items, ["a", "b"])
- => [{ a: "foo", b: "bar" }, { a: "baz", b: "qux" }]
+// [{ a: "foo", b: "bar" }, { a: "baz", b: "qux" }]
 ```
 
 **delay**
@@ -86,13 +86,13 @@ sliceEach(items, ["a", "b"])
 import { delay } from "@absoluteboi/absolute-utils"
 
 delay(500)
- => *pauses thread execution for 500 miliseconds*
+// *pauses thread execution for 500 miliseconds*
 
 delay(5, "s")
- => *pauses thread execution for 5 seconds*
+// *pauses thread execution for 5 seconds*
 
 delay(1, "min")
- => *pauses thread execution for 1 minute*
+// *pauses thread execution for 1 minute*
 ```
 
 **localeDateStringListFromRange**
@@ -103,7 +103,7 @@ const startDate = new Date(2023, 2, 8);
 const endDate = new Date(2023, 2, 10);
 
 localeDateStringListFromRange({ from: startDate, to: endDate })
- => ["2023-03-08", "2023-03-09", "2023-03-10"]
+// ["2023-03-08", "2023-03-09", "2023-03-10"]
 ```
 
 **buildQueryString**
@@ -113,7 +113,7 @@ import { buildQueryString } from "@absoluteboi/absolute-utils"
 const params = { foo: "bar", baz: ["qux", "quo"] };
 
 buildQueryString(params)
- => "?foo=bar&baz%5B%5D=qux&baz%5B%5D=quo"
+// "?foo=bar&baz%5B%5D=qux&baz%5B%5D=quo"
 ```
 
 **rejectEmpty**
@@ -123,7 +123,7 @@ import { rejectEmpty } from "@absoluteboi/absolute-utils"
 const object = { foo: 1, bar: null, baz: 3, qux: false };
 
 rejectEmpty(object)
- => { foo: 1, baz: 3, qux: false }
+// { foo: 1, baz: 3, qux: false }
 ```
 
 **withinMaxSafeInteger**
@@ -131,10 +131,10 @@ rejectEmpty(object)
 import { withinMaxSafeInteger } from "@absoluteboi/absolute-utils"
 
 withinMaxSafeInteger(6)
- => 6
+// 6
 
 withinMaxSafeInteger(10000000000000000000)
- => Number.MAX_SAFE_INTEGER (9007199254740991)
+// Number.MAX_SAFE_INTEGER (9007199254740991)
 ```
 
 **truncateWithEllipses**
@@ -144,7 +144,7 @@ import { truncateWithEllipses } from "@absoluteboi/absolute-utils"
 const string = "The human torch was denied a bank loan.";
 
 truncateWithEllipses(string, 15)
- => "The human torch&hellip;"
+// "The human torch&hellip;"
 ```
 
 ## Credits
