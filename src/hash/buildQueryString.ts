@@ -9,7 +9,9 @@ export const buildQueryString = <T>(
     if (!Array.isArray(value))
       queryString += new URLSearchParams({ [key]: String(value) }).toString();
     else
-      value.forEach((record) => {
+      value.forEach((record, i) => {
+        if (i > 0) queryString += "&";
+
         queryString += `${encodeURIComponent(`${key}[]`)}=${encodeURIComponent(
           record
         )}`;

@@ -8,8 +8,10 @@ describe("buildQueryString = (Record<string | number | symbol, T>) => string", (
   });
 
   it("returns a URI econded string for array values", () => {
-    const params = { foo: "bar", baz: ["qux"] };
+    const params = { foo: "bar", baz: ["qux", "quone"] };
 
-    expect(buildQueryString(params)).toEqual("?foo=bar&baz%5B%5D=qux");
+    expect(buildQueryString(params)).toEqual(
+      "?foo=bar&baz%5B%5D=qux&baz%5B%5D=quone"
+    );
   });
 });
