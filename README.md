@@ -2,7 +2,12 @@
 
 ## Description
 
-This is a library of useful generic functions that I found myself copy & pasting into projects so I decided to centralize them and maintain them in sync and in a single repo. Some are inspired by the robust Ruby/Rails ecosystem of convenience methods, some are borne out of necessity. All methods should be non-mutative and return a value (exceptions for the latter rule may be made for timer functions), and will typically expect at least one argument.
+This is a library of useful generic functions that I found myself copy & pasting
+into projects so I decided to centralize them and maintain them in sync and in a
+single repo. Some are inspired by the robust Ruby/Rails ecosystem of convenience
+methods, some are borne out of necessity. All methods should be non-mutative and
+return a value (exceptions for the latter rule may be made for timer functions),
+and will typically expect at least one argument.
 
 ## Table of Contents
 
@@ -16,7 +21,9 @@ This is a library of useful generic functions that I found myself copy & pasting
 ```
 npm i @absoluteboi/absolute-utils
 ```
+
 or (recommended)
+
 ```
 yarn add @absoluteboi/absolute-utils
 ```
@@ -26,6 +33,7 @@ yarn add @absoluteboi/absolute-utils
 Simply install and import:
 
 **haveEqualNumericValues**
+
 ```
 import { haveEqualNumericValues } from "@absoluteboi/absolute-utils"
 
@@ -37,6 +45,7 @@ haveEqualNumericValues([1,2,3], [1,2,4])
 ```
 
 **numericSort**
+
 ```
 import { numericSort } from "@absoluteboi/absolute-utils"
 
@@ -50,6 +59,7 @@ numericSort(numbers, { reverse: true })
 ```
 
 **pluck**
+
 ```
 import { pluck } from "@absoluteboi/absolute-utils"
 
@@ -66,6 +76,7 @@ pluck(items, ["a", "b"])
 ```
 
 **sliceEach**
+
 ```
 import { sliceEach } from "@absoluteboi/absolute-utils"
 
@@ -82,6 +93,7 @@ sliceEach(items, ["a", "b"])
 ```
 
 **delay**
+
 ```
 import { delay } from "@absoluteboi/absolute-utils"
 
@@ -96,6 +108,7 @@ delay(1, "min")
 ```
 
 **localeDateStringListFromRange**
+
 ```
 import { localeDateStringListFromRange } from "@absoluteboi/absolute-utils"
 
@@ -107,6 +120,7 @@ localeDateStringListFromRange({ from: startDate, to: endDate })
 ```
 
 **buildQueryString**
+
 ```
 import { buildQueryString } from "@absoluteboi/absolute-utils"
 
@@ -117,6 +131,7 @@ buildQueryString(params)
 ```
 
 **rejectEmpty**
+
 ```
 import { rejectEmpty } from "@absoluteboi/absolute-utils"
 
@@ -127,6 +142,7 @@ rejectEmpty(object)
 ```
 
 **withinMaxSafeInteger**
+
 ```
 import { withinMaxSafeInteger } from "@absoluteboi/absolute-utils"
 
@@ -137,7 +153,20 @@ withinMaxSafeInteger(10000000000000000000)
 // Number.MAX_SAFE_INTEGER (9007199254740991)
 ```
 
+**fib**
+
+```
+import { fib } from "@absoluteboi/absolute-utils"
+
+fib(6)
+// 8
+
+fib(13)
+// 233
+```
+
 **truncateWithEllipses**
+
 ```
 import { truncateWithEllipses } from "@absoluteboi/absolute-utils"
 
@@ -149,11 +178,13 @@ truncateWithEllipses(string, 15)
 
 ## Credits
 
-Big thanks to the maintainers of `jest`, `node`, and `typescript` for this tool is built on their shoulders.
+Big thanks to the maintainers of `jest`, `node`, and `typescript` for this tool
+is built on their shoulders.
 
 ## License
 
-GNU General Public License v3.0 or later (https://spdx.org/licenses/GPL-3.0-or-later.html)
+GNU General Public License v3.0 or later
+(https://spdx.org/licenses/GPL-3.0-or-later.html)
 
 <!--
 
